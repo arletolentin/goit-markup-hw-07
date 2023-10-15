@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+.nav-container,
+.hero-container,
+.feature-container,
+.services-container,
+.footer-container,
+.portfolio-butoon-container,
+.portfolio-services-container,
+.team-container,
+.customer-container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+.head {
+    flex-shrink: 0;
+    text-decoration: none;
+    padding: 24px 16px;
+    border-bottom: 1px solid var(--cornflower);
+      }
+.nav-address,
+.nav-list {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 40px;
+    text-decoration: none;
+      }
+.nav-list {
+    margin-right: 121px;
+}
+.nav-address {
+    display: block;
+    }
+.hero-heading {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    }
+.feature-head,
+.team-item-name {
+    font-size: 36px;
+    }
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    width: 356px;
+}
+.feature-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 72px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+}
+}
