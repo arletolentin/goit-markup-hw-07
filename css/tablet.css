@@ -43,14 +43,28 @@
 .feature-item {
     display: flex;
     align-items: flex-start;
-    width: 356px;
-}
+    width: 346px;
+    }
 .feature-list {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding-top: 72px;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 96px;
     gap: 24px;
-}
+    }
+.team-item {
+    width: 264px;
+    height: 428px;
+    margin-bottom: 64px;
+    }
+.team-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    padding-bottom: 32px;
+    }
+.team-item-name {
+    font-size: 20px;
+    }
 }

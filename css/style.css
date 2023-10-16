@@ -76,7 +76,7 @@ button {
 .customer-container {
   width: 428px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 .head {
   flex-shrink: 0;
@@ -325,9 +325,14 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item-text{
   text-align: center;
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
-.feature-body,
-.team-item-text {
+.feature-body {
   color: var(--slate);
   font-size: 16px;
   font-style: normal;
@@ -398,7 +403,7 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .team {
   flex-shrink: 0;
   background: var(--cloud);
-  padding: 96px 82px;
+  /* padding: 96px 82px; */
 }
 .team-item-text {
   margin-bottom: 8px;
@@ -413,11 +418,13 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
+  padding-top: 96px;
 }
 .team-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   background: var(--white);
@@ -428,6 +435,7 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   justify-content: center;
   gap: 72px;
+  padding-bottom: 96px;
 }
 .team-item-name {
   margin-bottom: 8px;
@@ -481,10 +489,9 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   .customer-list {
-  display: inline-block;
-  margin-top: 72px;
-  flex-direction: row;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
   justify-content: center;
   gap: 24px;
   }
@@ -497,6 +504,7 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--lightslate);
   padding: 16px 32px;
+  margin-bottom: 48px;
 }
 .customer-icon-link {
   color: var(--lightslate);
@@ -512,11 +520,18 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer {
   background: var(--navyblue);
   display: flex;
+  flex-direction: column;
   padding-top: 101.5px;
   padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .footer-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .web-foot,
 .studio-foot {
@@ -532,7 +547,7 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-foot {
   color: var(--cloud);
-  margin-right: 269px;
+  /* margin-right: 269px; */
 }
 .footer-paragraph {
   color: var(--cloud);
@@ -579,7 +594,9 @@ transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--green);
 }
 .footer-form {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .footer-form input {
   display: flex;

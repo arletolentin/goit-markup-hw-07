@@ -25,26 +25,58 @@
     gap: 40px;
     text-decoration: none;
     }
+.nav-list {
+    margin-right: 332px;
+    }
 .hero-heading {
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
     }
-.feature-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 44px;
-    }
+
+.feature-body,
+.team-item-text {
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
 .feature-head,
 .team-item-name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px; /* 120% */
-    letter-spacing: 0.4px;
+  color: var(--navyblue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+.features {
+  flex-shrink: 0;
+  display: flex;
+  background: var(--white);
+  justify-content: center;
+  padding: 120px 0;
+}
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 .feature-item {
-    width: 264px;
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.feature-list-icon {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--cloud);
+  padding: 24px 100px;
 }
 .services {
     background: var(--white);
@@ -58,5 +90,121 @@
     flex-direction: row;
     align-items: center;
     gap: 24px;
+  }
+  .footer {
+    background: var(--navyblue);
+    display: flex;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    display: flex;
+  }
+  .web-foot,
+  .studio-foot {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+    margin-bottom: 17.5px;
+  }
+  .web-foot {
+    color: var(--iris);
+  }
+  .studio-foot {
+    color: var(--cloud);
+    margin-right: 269px;
+  }
+  .footer-paragraph {
+    color: var(--cloud);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    margin-top: 17.5px;
+  }
+  .footer-media{
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+  }
+  .footer-icon-link {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: var(--iris);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-icons-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .footer-icons {
+    height: 16px;
+    width: 16px;
+  }
+  .footer-icon-link:hover {
+    background: var(--green);
+  }
+  .footer-form {
+    display: inline-flex;
+  }
+  .footer-form input {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 24px;
+    margin-top: 16px;
+    padding: 8px 16px;
+    /* width: 264px;
+    height: 40px */
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  .footer-form label {
+     margin-left: 60px;
+     color: var(--white);
+     font-family: 'Roboto', sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     letter-spacing: 0.32px;
+  }
+  .footer-form .footer-subscribe-button {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--iris);
+  }
+  .footer-subscribe-button {
+    color: var(--white);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    display: inline-flex;
+    width: 165px;
+    height: 40px;
   }
 }
