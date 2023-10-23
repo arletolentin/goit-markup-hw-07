@@ -33,7 +33,12 @@
     line-height: 60px;
     letter-spacing: 1.12px;
     }
-
+.webstudio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 120px;
+}
 .feature-body,
 .team-item-text {
   color: var(--slate);
@@ -113,10 +118,10 @@
   }
   .web-foot {
     color: var(--iris);
+    margin-left: 0;
   }
   .studio-foot {
     color: var(--cloud);
-    margin-right: 269px;
   }
   .footer-paragraph {
     color: var(--cloud);
@@ -137,6 +142,10 @@
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
     margin-bottom: 16px;
+    margin-left: 0;
+  }
+  .footer-media-container {
+    margin-right: 80px;
   }
   .footer-icon-link {
     display: inline-flex;
@@ -162,20 +171,19 @@
   .footer-icon-link:hover {
     background: var(--green);
   }
-  .footer-form {
-    display: flex;
+  .placeholder{
+    color: var(--white);
   }
   .footer-form input {
     display: flex;
-    margin-left: 60px;
-    margin-right: 24px;
     margin-top: 16px;
     padding: 8px 16px;
-    /* width: 264px;
-    height: 40px */
+    width: 264px;
+    height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+    color: var(--white);
     }
   .footer-form label {
      /* margin-left: 60px; */
@@ -186,15 +194,16 @@
      font-weight: 500;
      line-height: 24px;
      letter-spacing: 0.32px;
+     margin-left: 0;
   }
   .footer-form .footer-subscribe-button {
     display: inline-flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     background: var(--iris);
+    margin-top: 0;
   }
   .footer-subscribe-button {
     color: var(--white);
@@ -209,14 +218,9 @@
     width: 165px;
     height: 40px;
   }
-.footer-subscribe-container {
-  display: flex;
-  flex-direction: column;
-  position:absolute;
-  }
 .footer-subscribe-button {
   position: relative;
-  transform:  translateY(40px);
-  margin-left: 300px;
+  /* transform:  translateY(-550px); */
+  transform: translateX(250px);
 }
 }
