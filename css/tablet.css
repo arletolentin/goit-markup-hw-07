@@ -67,4 +67,10 @@
 .team-item-name {
     font-size: 20px;
     }
+.topnav {
+    display: none;
+}
+.nav-logo {
+    display: flex;
+}
 }

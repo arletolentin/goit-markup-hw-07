@@ -845,3 +845,48 @@ label.client-info-checkbox {
   line-height: 14px; /* 116.667% */
   letter-spacing: 0.48px;
 }
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: white;
+  height: 796px;
+  color: green;
+  border-radius: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  width: 380px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: var(--black);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: var(--white);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: var(--iris);
+}
+.nav-logo {
+  display: none;
+}
+.topnav {
+  position: fixed;
+}
