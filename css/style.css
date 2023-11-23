@@ -779,23 +779,6 @@ label.client-info-checkbox {
   letter-spacing: 0.48px;
   display: inline;
 }
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  opacity: 0;
-  padding: 0;
-  overflow: hidden; */
-
- /* label.client-info-checkbox {
-  background-color: var(--cloud);
-  color: var(--white);
-  cursor: pointer;
-  height: 16px;
-  position: relative;
-} */
 .client-info-comment textarea {
   resize: none;
   width: 100%;
